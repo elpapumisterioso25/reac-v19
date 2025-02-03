@@ -1,7 +1,6 @@
 import React, { use, useTransition } from "react";
 import axios from "axios";
 
-// Creamos una función para obtener los datos que devuelve una promesa
 async function fetchCharacters() {
   const response = await axios.get("https://rickandmortyapi.com/api/character");
   return response.data.results;
